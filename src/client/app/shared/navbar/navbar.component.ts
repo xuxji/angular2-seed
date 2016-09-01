@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from 'ng2-translate/ng2-translate';
 
 /**
  * This class represents the navigation bar component.
@@ -10,4 +11,10 @@ import { Component } from '@angular/core';
   styleUrls: ['navbar.component.css'],
 })
 
-export class NavbarComponent {}
+export class NavbarComponent {
+  param: string = 'world';
+  constructor(translate: TranslateService) {
+    translate.setDefaultLang('en');
+    translate.use('cn');
+  }
+}

@@ -13,11 +13,11 @@ import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   imports: [
-      BrowserModule, 
-      HttpModule, 
-      RouterModule.forRoot(routes), 
-      AboutModule, 
-      HomeModule, 
+      BrowserModule,
+      HttpModule,
+      RouterModule.forRoot(routes),
+      AboutModule,
+      HomeModule,
       SharedModule.forRoot(),
       TranslateModule.forRoot({
           provide: TranslateLoader,
